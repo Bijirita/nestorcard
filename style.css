@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+}
+
+body{
+    font-family: 'Dosis', sans-serif;
+    background-color: rgb(92, 165, 233);
+}
+
+.wrapper{
+    display: flex;
+    background-color: rgb(150, 228, 202);
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    border-color: 5px double rgb(90, 87, 87);
+}
+
+
+nav{
+    display: flex;
+    background-color: rgb(240, 184, 184)
+}
+
+ul{
+    display: flex;
+    padding: 20px;
+}
+
+.pages{
+    display: flex;
+
+}
