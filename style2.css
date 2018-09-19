@@ -77,22 +77,25 @@ a {
     list-style-type: none;
 }
 
- /* creating color change of font to sand and background to dark gray on hover. Adding pointer curser  */
+ /* creating color change of font to sand and background to dark gray on hover. Adding pointer curser. Rotating links  */
  .pages li:hover a, .pages li:hover {
     color: rgb(206, 171, 125);
     cursor: pointer;
     background-color: rgb(82, 80, 80);
+    transform: rotate(90deg);
 }
 
-/* Using image to link to email  */
+/* Using image to link to email. Animating that image.  */
 .email{
     background-image: url(mail.jpg);
     max-width: 200px;
     max-height: 130px;
     z-index: 5;
+    animation: 1s;
 }
 
 /* Adding cursor pointer on hover */
 .email:hover{
     cursor: pointer;
 }
+
