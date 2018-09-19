@@ -40,6 +40,35 @@ a {
     background-color: rgb(143, 148, 146);
     font-size: 55px;
     z-index: 2;
+    margin: 25px;
+}
+
+.box{
+    background-color: rgb(94, 129, 105);
+    border: 5px solid rgb(143, 148, 146);
+}
+
+.nestorp {
+    background-image: url(nestorp.jpg);
+    list-style-type: none;
+    
+}
+.nestorp a:before {
+    display: inline;
+    margin-right: 20px;
+}
+
+.blurb {
+    background-color: rgb(143, 148, 146);
+    border: 5px double black;
+    padding: 20px;
+    z-index: 4;
+    font-weight: 400;
+    font-size: 36;
+}
+
+.pages{
+    list-style-type: none;
 }
 
  /* creating color change of font to sand and background to dark gray on hover. Adding pointer curser  */
