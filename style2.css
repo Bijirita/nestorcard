@@ -92,10 +92,26 @@ a {
     max-height: 130px;
     z-index: 5;
     animation: 1s;
+    font-size: 110px;
 }
+
+/*making the word mail clear to only see image*/
+#clear{
+    opacity: 0;
+} 
 
 /* Adding cursor pointer on hover */
 .email:hover{
     cursor: pointer;
+    animation: flipout 1s infinite;
 }
 
+/* Adding Keyframes for animation of email link */
+@keyframes flipout{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(90deg);
+    }
+}
