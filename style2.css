@@ -16,8 +16,8 @@ a {
 }
 
 /* Creating grid to hold main content */
-.main {
-    height: 1000px;
+.grid {
+    height: 1050px;
     width: 1000px;
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -32,6 +32,7 @@ a {
     height: 98%;
     position: absolute;
     opacity: .4;
+    background-repeat: repeat-y;
 }
 
 /* Making the navbar a flexbox and floating to the right. Increasing font size  */
@@ -40,22 +41,27 @@ a {
     background-color: rgb(143, 148, 146);
     font-size: 55px;
     z-index: 2;
-    margin: 25px;
+    margin: 15px;
 }
 
+/* Adding spacing between links, aligning text to center, and centering links in parent */
 .box{
     background-color: rgb(94, 129, 105);
     border: 5px solid rgb(143, 148, 146);
+    text-align: center;
+    padding: 10px;
+    border-radius: 25%;
 }
 
 .nestorp {
     background-image: url(nestorp.jpg);
     list-style-type: none;
-    
+    border: 5px double rgb(94, 129, 105);
+    border-radius: 10%;
 }
 .nestorp a:before {
     display: inline;
-    margin-right: 20px;
+    margin-right: 50px;
 }
 
 .blurb {
@@ -84,4 +90,9 @@ a {
     max-width: 200px;
     max-height: 130px;
     z-index: 5;
+}
+
+/* Adding cursor pointer on hover */
+.email:hover{
+    cursor: pointer;
 }
