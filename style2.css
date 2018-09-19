@@ -7,6 +7,7 @@ body{
     font-weight: bold;
     color: black;
     background-color: rgb(92, 165, 233);
+    max-width: 1040px;
 }
 
 /* changing color of anchor tags to black and removing text decoration  */
@@ -44,6 +45,33 @@ a {
     margin: 15px;
 }
 
+/* Media Queries for navbar overlap */
+@media screen and (max-width: 975px) {
+    nav{
+        z-index: 3;
+    }
+    .grid {
+        display: block;
+    }
+    .blurb{
+        flex-wrap: wrap;
+        max-width: 200px;
+        z-index: 4;
+        position: relative;
+    }
+    .dali{
+        position: absolute;
+    }
+    .email{
+        z-index: 5;
+        position: relative;
+        margin: 10px;
+    }
+    .flex{
+        max-width: 360px;
+    }
+}
+
 /* Adding spacing between links, aligning text to center, and centering links in parent */
 .box{
     background-color: rgb(94, 129, 105);
@@ -71,6 +99,8 @@ a {
     z-index: 4;
     font-weight: 400;
     font-size: 36;
+    max-width: 340px;
+    max-height: 100px;
 }
 
 .pages{
@@ -93,6 +123,7 @@ a {
     z-index: 5;
     animation: 1s;
     font-size: 110px;
+    animation-direction: alternate;
 }
 
 /*making the word mail clear to only see image*/
