@@ -7,7 +7,6 @@ body{
     font-weight: bold;
     color: black;
     background-color: rgb(92, 165, 233);
-    max-width: 1040px;
 }
 
 /* changing color of anchor tags to black and removing text decoration  */
@@ -16,32 +15,41 @@ a {
     text-decoration: none;
 }
 
-/* changing width on navbar */
-.flex{
-    max-width: 300px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+/* Making the navbar a flexbox and floating to the right. Increasing font size  */
+nav{
+    display: flex;
+    background-color: rgb(109, 109, 109);
+    font-size: 55px;
+    z-index: 2;
+    margin: 15px;
+    border: 5px double black;
+    border-radius: 5%;
 }
 
-/* Centering whole page */
-.center{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+article{
+    background-color: rgb(143, 148, 146);
+    border: 5px double black;
+    padding: 20px;
+    z-index: 4;
+    font-weight: 400;
+    font-size: 36;
+    max-width: 400px;
+    max-height: 100px;
+    border-radius: 5%;
+    grid-row: 1 / 3;
 }
 
-/* Creating grid to hold main content */
-.grid {
-    height: 1050px;
-    width: 1000px;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 2fr 1fr 1fr;
+/* making grid */
+.grid{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
     grid-gap: 20px;
+    max-height: 800px;
+    max-width: 800px;
 }
+
+
 
 /* Adding background image to absolute top left. Making background image see through.  */
 .dali{
@@ -53,55 +61,20 @@ a {
     background-repeat: repeat-y;
 }
 
-/* Making the navbar a flexbox and floating to the right. Increasing font size  */
-.flex {
-    display: flex;
-    background-color: rgb(143, 148, 146);
-    font-size: 55px;
-    z-index: 2;
-    margin: 15px;
-}
-
-/* Media Queries for navbar overlap */
-@media screen and (max-width: 975px) {
-    nav{
-        z-index: 3;
-    }
-    .grid {
-        display: block;
-    }
-    .blurb{
-        flex-wrap: wrap;
-        max-width: 200px;
-        z-index: 4;
-        position: relative;
-    }
-    .dali{
-        position: absolute;
-    }
-    .email{
-        z-index: 5;
-        position: relative;
-        margin: 10px;
-    }
-    .flex{
-        max-width: 360px;
-    }
-}
-
 /* Adding spacing between links, aligning text to center, and centering links in parent */
 .box{
-    background-color: rgb(94, 129, 105);
-    border: 5px solid rgb(143, 148, 146);
+    background-color: rgb(174, 175, 174);
+    border: 5px solid rgb(109, 109, 109);
     text-align: center;
     padding: 10px;
     border-radius: 25%;
+    margin: 10px;
 }
 
 .nestorp {
     background-image: url(nestorp.jpg);
     list-style-type: none;
-    border: 5px double rgb(94, 129, 105);
+    border: 5px double rgb(109, 109, 109);
     border-radius: 10%;
 }
 .nestorp a:before {
@@ -109,19 +82,10 @@ a {
     margin-right: 50px;
 }
 
-.blurb {
-    background-color: rgb(143, 148, 146);
-    border: 5px double black;
-    padding: 20px;
-    z-index: 4;
-    font-weight: 400;
-    font-size: 36;
-    max-width: 340px;
-    max-height: 100px;
-}
-
 .pages{
     list-style-type: none;
+    border-radius: 5%; 
+    padding: 10px;
 }
 
  /* creating color change of font to sand and background to dark gray on hover. Adding pointer curser. Rotating links  */
