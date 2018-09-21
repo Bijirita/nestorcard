@@ -25,6 +25,7 @@ nav{
     margin: 15px;
     border: 5px double black;
     border-radius: 5%;
+    max-width: 285px;
 }
 
 /* Making article box for client intro. Setting radius, and font size/weight */
@@ -110,7 +111,7 @@ article{
 }
 
 /* Media Queries for navbar overlap. Going from two columns to one*/
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .grid{
         grid-template-columns: 1fr;
     }
